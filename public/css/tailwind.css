@@ -588,25 +588,8 @@ video {
 
 /* This is all you. */
 
-.mx-auto {
-	margin-left: auto !important;
-	margin-right: auto !important;
-}
-
-.flex {
-	display: flex !important;
-}
-
-.h-screen {
-	height: 100vh !important;
-}
-
-.items-center {
-	align-items: center !important;
-}
-
-.justify-center {
-	justify-content: center !important;
+.max-w-6xl {
+	max-width: 72rem !important;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -628,11 +611,6 @@ video {
 	padding: 0.5rem !important;
 }
 
-.px-2 {
-	padding-left: 0.5rem !important;
-	padding-right: 0.5rem !important;
-}
-
 .pb-16 {
 	padding-bottom: 4rem !important;
 }
@@ -643,6 +621,11 @@ video {
 
 .font-sans {
 	font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.text-3xl {
+	font-size: 1.875rem !important;
+	line-height: 2.25rem !important;
 }
 
 .text-xs {
@@ -660,6 +643,11 @@ video {
 
 .leading-normal {
 	line-height: 1.5 !important;
+}
+
+.text-green-800 {
+	--tw-text-opacity: 1 !important;
+	color: rgba(6, 95, 70, var(--tw-text-opacity)) !important;
 }
 
 .text-gray-500 {
