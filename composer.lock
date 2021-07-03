@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fdb53de12cd1e1fa60cadc93417ab56a",
+    "content-hash": "91922f24c2e19f30636ffdddc173018a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6775,6 +6775,58 @@
                 "source": "https://github.com/wilderborn/partyline/tree/master"
             },
             "time": "2017-06-01T19:46:00+00:00"
+        },
+        {
+            "name": "youfront/statamic-export",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Youfront/statamic-export.git",
+                "reference": "ab07f26ea3d84183c3a213c4b7722f7b0ec5b9c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Youfront/statamic-export/zipball/ab07f26ea3d84183c3a213c4b7722f7b0ec5b9c1",
+                "reference": "ab07f26ea3d84183c3a213c4b7722f7b0ec5b9c1",
+                "shasum": ""
+            },
+            "require": {
+                "league/csv": "^9.0.0",
+                "statamic/cms": "^3.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Export",
+                    "description": "Export ",
+                    "editions": [
+                        "free"
+                    ]
+                },
+                "laravel": {
+                    "providers": [
+                        "Youfront\\Export\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Youfront\\Export\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Anders Søgaard"
+                }
+            ],
+            "description": "Statamic Export",
+            "support": {
+                "email": "team@youfront.dk",
+                "issues": "https://github.com/Youfront/statamic-export/issues",
+                "source": "https://github.com/Youfront/statamic-export/tree/1.0.3"
+            },
+            "time": "2020-11-22T16:36:08+00:00"
         }
     ],
     "packages-dev": [
