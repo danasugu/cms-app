@@ -635,6 +635,10 @@ video {
 	margin: auto !important;
 }
 
+.m-2 {
+	margin: 0.5rem !important;
+}
+
 .mx-auto {
 	margin-left: auto !important;
 	margin-right: auto !important;
@@ -899,6 +903,11 @@ video {
 .bg-yellow-700 {
 	--tw-bg-opacity: 1 !important;
 	background-color: rgba(180, 83, 9, var(--tw-bg-opacity)) !important;
+}
+
+.bg-pink-500 {
+	--tw-bg-opacity: 1 !important;
+	background-color: rgba(236, 72, 153, var(--tw-bg-opacity)) !important;
 }
 
 .object-cover {
