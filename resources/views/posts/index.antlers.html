@@ -4,7 +4,7 @@
 <!-- component -->
 <div class="container px-4 mx-auto my-12 md:px-12">
 
-  {{ collection:posts }}
+  {{ collection:posts limit="3" paginate="true" as="posts" }}
   {{ if no_results }}
   <p>Aww, there are no results.</p>
   {{ /if }}
@@ -50,5 +50,14 @@
     <!-- END Column -->
     {{ /posts }}
   </div>
+  {{ paginate }}
+  <a href="{{ prev_page }}">⬅ Previous</a>
+
+  {{ current_page }} of {{ total_pages }} pages
+  (There are {{ total_items }} posts)
+
+  <a href="{{ next_page }}">Next ➡</a>
+  {{ /paginate }}
+
   {{ /collection:posts }}
 </div>
