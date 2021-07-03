@@ -1,30 +1,24 @@
-<h1 class="text-3xl text-green-800">{{ title }}</h1>
+<!-- <h1 class="text-3xl text-green-800">{{ title }}</h1> -->
 
 <main class="mt-10">
 
   <div class="relative w-full mx-auto mb-4 md:mb-0">
     <div class="px-4 lg:px-0">
       <h2 class="text-4xl font-semibold leading-tight text-gray-800">
-        Pellentesque a consectetur velit, ac molestie ipsum. Donec sodales, massa et auctor.
+        {{ title }}
       </h2>
-      <a href="#" class="inline-flex items-center justify-center py-2 mb-2 text-green-700">
+      <!-- <a href="#" class="inline-flex items-center justify-center py-2 mb-2 text-green-700">
         Cryptocurrency
-      </a>
+      </a> -->
     </div>
 
-    <img
-      src="https://images.unsplash.com/photo-1587614387466-0a72ca909e16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
-      class="object-cover w-full lg:rounded" style="height: 28em;" />
+    <img src="{{ featured_image }}" class="w-full object- lg:rounded" style="height: 48em;" />
   </div>
 
   <div class="flex flex-col lg:flex-row lg:space-x-12">
 
     <div class="w-full px-4 mt-12 text-lg leading-relaxed text-gray-700 lg:px-0 lg:w-3/4">
-      <p class="pb-6">Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is
-        justice. Six draw
-        you him full not mean evil. Prepare garrets it expense windows shewing do an. She projection advantages
-        resolution son indulgence. Part sure on no long life am at ever. In songs above he as drawn to. Gay was
-        outlived peculiar rendered led six.</p>
+
 
       <p class="pb-6">Difficulty on insensible reasonable in. From as went he they. Preference themselves me as
         thoroughly
