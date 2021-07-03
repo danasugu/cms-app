@@ -667,6 +667,18 @@ video {
 	margin-left: 0.25rem !important;
 }
 
+.ml-2 {
+	margin-left: 0.5rem !important;
+}
+
+.mr-1 {
+	margin-right: 0.25rem !important;
+}
+
+.block {
+	display: block !important;
+}
+
 .flex {
 	display: flex !important;
 }
@@ -675,12 +687,28 @@ video {
 	display: inline-flex !important;
 }
 
+.hidden {
+	display: none !important;
+}
+
 .h-10 {
 	height: 2.5rem !important;
 }
 
 .h-4 {
 	height: 1rem !important;
+}
+
+.h-auto {
+	height: auto !important;
+}
+
+.h-12 {
+	height: 3rem !important;
+}
+
+.h-6 {
+	height: 1.5rem !important;
 }
 
 .w-10 {
@@ -695,8 +723,20 @@ video {
 	width: 100% !important;
 }
 
+.w-12 {
+	width: 3rem !important;
+}
+
+.w-6 {
+	width: 1.5rem !important;
+}
+
 .max-w-6xl {
 	max-width: 72rem !important;
+}
+
+.cursor-pointer {
+	cursor: pointer !important;
 }
 
 .flex-col {
@@ -715,10 +755,18 @@ video {
 	justify-content: center !important;
 }
 
+.justify-between {
+	justify-content: space-between !important;
+}
+
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
 	--tw-space-x-reverse: 0 !important;
 	margin-right: calc(0.75rem * var(--tw-space-x-reverse)) !important;
 	margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse))) !important;
+}
+
+.overflow-hidden {
+	overflow: hidden !important;
 }
 
 .rounded {
@@ -727,6 +775,10 @@ video {
 
 .rounded-full {
 	border-radius: 9999px !important;
+}
+
+.rounded-lg {
+	border-radius: 0.5rem !important;
 }
 
 .border-0 {
@@ -741,6 +793,11 @@ video {
 .bg-indigo-500 {
 	--tw-bg-opacity: 1 !important;
 	background-color: rgba(99, 102, 241, var(--tw-bg-opacity)) !important;
+}
+
+.bg-gray-400 {
+	--tw-bg-opacity: 1 !important;
+	background-color: rgba(156, 163, 175, var(--tw-bg-opacity)) !important;
 }
 
 .p-2 {
@@ -803,6 +860,16 @@ video {
 	line-height: 1.5rem !important;
 }
 
+.text-lg {
+	font-size: 1.125rem !important;
+	line-height: 1.75rem !important;
+}
+
+.text-sm {
+	font-size: 0.875rem !important;
+	line-height: 1.25rem !important;
+}
+
 .font-bold {
 	font-weight: 700 !important;
 }
@@ -817,6 +884,18 @@ video {
 
 .leading-normal {
 	line-height: 1.5 !important;
+}
+
+.leading-tight {
+	line-height: 1.25 !important;
+}
+
+.leading-none {
+	line-height: 1 !important;
+}
+
+.leading-5 {
+	line-height: 1.25rem !important;
 }
 
 .text-green-800 {
@@ -844,6 +923,42 @@ video {
 	color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
 }
 
+.text-black {
+	--tw-text-opacity: 1 !important;
+	color: rgba(0, 0, 0, var(--tw-text-opacity)) !important;
+}
+
+.text-gray-700 {
+	--tw-text-opacity: 1 !important;
+	color: rgba(55, 65, 81, var(--tw-text-opacity)) !important;
+}
+
+.no-underline {
+	text-decoration: none !important;
+}
+
+.shadow-lg {
+	--tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+	box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), var(--tw-shadow) !important;
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow) !important;
+}
+
+.transition {
+	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
+	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter !important;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+	transition-duration: 150ms !important;
+}
+
+.duration-150 {
+	transition-duration: 150ms !important;
+}
+
+.ease-in {
+	transition-timing-function: cubic-bezier(0.4, 0, 1, 1) !important;
+}
+
 .hover\:bg-gray-200:hover {
 	--tw-bg-opacity: 1 !important;
 	background-color: rgba(229, 231, 235, var(--tw-bg-opacity)) !important;
@@ -852,6 +967,10 @@ video {
 .hover\:text-gray-900:hover {
 	--tw-text-opacity: 1 !important;
 	color: rgba(17, 24, 39, var(--tw-text-opacity)) !important;
+}
+
+.hover\:underline:hover {
+	text-decoration: underline !important;
 }
 
 .focus\:outline-none:focus {
@@ -873,12 +992,20 @@ video {
 		margin-top: 0px !important;
 	}
 
+	.md\:flex {
+		display: flex !important;
+	}
+
 	.md\:w-1\/2 {
 		width: 50% !important;
 	}
 
 	.md\:flex-row {
 		flex-direction: row !important;
+	}
+
+	.md\:p-4 {
+		padding: 1rem !important;
 	}
 
 	.md\:px-12 {
