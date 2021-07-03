@@ -1,6 +1,6 @@
-title: Search
+title: 'Search Results'
 template: search
-layout: search
+layout: default
 revisions: false
 sort_dir: asc
 date_behavior:

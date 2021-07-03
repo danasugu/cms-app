@@ -1131,6 +1131,10 @@ video {
 	max-width: 20rem !important;
 }
 
+.max-w-4xl {
+	max-width: 56rem !important;
+}
+
 .flex-auto {
 	flex: 1 1 auto !important;
 }

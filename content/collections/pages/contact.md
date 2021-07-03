@@ -50,7 +50,7 @@ this is contact page
           </div>
         </div>
         <div class="w-full p-2">
-          <button class="flex px-8 py-2 mx-auto text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">Button</button>
+          <button class="flex px-8 py-2 mx-auto text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">Send</button>
         </div>
         <div class="w-full p-2 pt-8 mt-8 text-center border-t border-gray-200">
           <a class="text-indigo-500">example@email.com</a>
