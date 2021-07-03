@@ -13,7 +13,7 @@
       <article class="overflow-hidden rounded-lg shadow-lg">
 
         <a href="#">
-          <img alt="Placeholder" class="block w-full h-auto" src="https://picsum.photos/600/400/?random">
+          <img alt="Placeholder" class="block w-full h-auto" src="{{ featured_image }}">
         </a>
 
         <header class="flex items-center justify-between p-2 leading-tight md:p-4">
@@ -23,15 +23,15 @@
             </a>
           </h1>
           <p class="text-sm text-grey-darker">
-            14/4/19
+            {{ date }}
           </p>
         </header>
 
         <footer class="flex items-center justify-between p-2 leading-none md:p-4">
           <a class="flex items-center text-black no-underline hover:underline" href="#">
-            <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random">
+            <img alt="Placeholder" class="block rounded-full" src="{{ featured_image }}">
             <p class="ml-2 text-sm">
-              Author Name
+              {{ author:name }}
             </p>
           </a>
           <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
