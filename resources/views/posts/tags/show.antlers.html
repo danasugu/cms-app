@@ -1,44 +1,7 @@
 {{ entries paginate="5" }}
 <div class="flex flex-wrap -mx-1 lg:-mx-4">
   {{ results }}
-  <!-- Column -->
-  <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-
-    <!-- Article -->
-    <article class="overflow-hidden rounded-lg shadow-lg">
-
-      <a href="{{ url }}">
-        <img alt="Placeholder" class="h-auto w-50 h-block" src="{{ featured_image }}">
-      </a>
-
-      <header class="flex items-center justify-between p-2 leading-tight md:p-4">
-        <h1 class="text-lg">
-          <a class="text-black no-underline hover:underline" href="{{ url }}">
-            {{ title }}
-          </a>
-        </h1>
-        <p class="text-sm text-grey-darker">
-          {{ date }}
-        </p>
-      </header>
-
-      <footer class="flex items-center justify-between p-2 leading-none md:p-4">
-        <a class="flex items-center text-black no-underline hover:underline" href="#">
-          <img alt="Placeholder" class="block rounded-full" src="{{ author:avatar }}">
-          <p class="ml-2 text-sm">
-            {{ author:name }}
-          </p>
-        </a>
-        <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-          <span class="hidden">Like</span>
-          <i class="fa fa-heart"></i>
-        </a>
-      </footer>
-
-    </article>
-    <!-- END Article -->
-  </div>
-  <!-- END Column -->
+  {{ partial:posts/card }}
   {{ /results }}
 </div>
 {{ /entries }}
