@@ -20,14 +20,18 @@
                 </svg>
                 <span class="ml-3 text-xl">CMS Laravel</span>
             </a>
+            <form action="/search/results">
+                <input type="search" name="q" placeholder="Search">
+                <button type="submit">Go find it!</button>
+            </form>
             <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto">
-                {{ nav:collection:pages include_home="true" }}
+                {{ nav:main_nav }}
                 <a href="{{ url }}" class="mr-5 hover:text-gray-900">{{ title }}</a>
                 <!-- <a href="/" class="mr-5 hover:text-gray-900">Home</a>
                 <a href="/about-us" class="mr-5 hover:text-gray-900">About us</a>
                 <a href="/posts" class="mr-5 hover:text-gray-900">Posts</a>
                 <a href="/contact" class="mr-5 hover:text-gray-900">Contact</a> -->
-                {{ /nav:collection:pages }}
+                {{ /nav:main_nav }}
             </nav>
             <!-- <button
                 class="inline-flex items-center px-3 py-1 mt-4 text-base bg-gray-100 border-0 rounded focus:outline-none hover:bg-gray-200 md:mt-0">Button
