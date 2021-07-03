@@ -695,8 +695,16 @@ video {
 	margin-top: 3rem !important;
 }
 
+.mb-6 {
+	margin-bottom: 1.5rem !important;
+}
+
 .mr-2 {
 	margin-right: 0.5rem !important;
+}
+
+.mt-6 {
+	margin-top: 1.5rem !important;
 }
 
 .block {
@@ -763,6 +771,10 @@ video {
 	max-width: 640px !important;
 }
 
+.max-w-screen-lg {
+	max-width: 1024px !important;
+}
+
 .cursor-pointer {
 	cursor: pointer !important;
 }
@@ -813,12 +825,21 @@ video {
 	border-width: 0px !important;
 }
 
+.border-l-4 {
+	border-left-width: 4px !important;
+}
+
 .border-t {
 	border-top-width: 1px !important;
 }
 
 .border-b {
 	border-bottom-width: 1px !important;
+}
+
+.border-gray-500 {
+	--tw-border-opacity: 1 !important;
+	border-color: rgba(107, 114, 128, var(--tw-border-opacity)) !important;
 }
 
 .bg-gray-100 {
@@ -834,6 +855,16 @@ video {
 .bg-gray-300 {
 	--tw-bg-opacity: 1 !important;
 	background-color: rgba(209, 213, 219, var(--tw-bg-opacity)) !important;
+}
+
+.bg-green-300 {
+	--tw-bg-opacity: 1 !important;
+	background-color: rgba(110, 231, 183, var(--tw-bg-opacity)) !important;
+}
+
+.bg-yellow-300 {
+	--tw-bg-opacity: 1 !important;
+	background-color: rgba(252, 211, 77, var(--tw-bg-opacity)) !important;
 }
 
 .bg-pink-300 {
@@ -902,6 +933,14 @@ video {
 	padding-bottom: 4rem !important;
 }
 
+.pb-6 {
+	padding-bottom: 1.5rem !important;
+}
+
+.pl-4 {
+	padding-left: 1rem !important;
+}
+
 .text-center {
 	text-align: center !important;
 }
@@ -945,6 +984,11 @@ video {
 	line-height: 2.5rem !important;
 }
 
+.text-2xl {
+	font-size: 1.5rem !important;
+	line-height: 2rem !important;
+}
+
 .font-bold {
 	font-weight: 700 !important;
 }
@@ -959,6 +1003,10 @@ video {
 
 .uppercase {
 	text-transform: uppercase !important;
+}
+
+.italic {
+	font-style: italic !important;
 }
 
 .leading-normal {
@@ -1076,6 +1124,17 @@ video {
 	outline-offset: 2px !important;
 }
 
+@media (min-width: 640px) {
+
+	.sm\:w-3\/4 {
+		width: 75% !important;
+	}
+
+	.sm\:w-1\/4 {
+		width: 25% !important;
+	}
+}
+
 @media (min-width: 768px) {
 
 	.md\:mb-0 {
@@ -1146,6 +1205,12 @@ video {
 
 	.lg\:flex-row {
 		flex-direction: row !important;
+	}
+
+	.lg\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
+		--tw-space-x-reverse: 0 !important;
+		margin-right: calc(3rem * var(--tw-space-x-reverse)) !important;
+		margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse))) !important;
 	}
 
 	.lg\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
