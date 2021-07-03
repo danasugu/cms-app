@@ -12,13 +12,13 @@
       <!-- Article -->
       <article class="overflow-hidden rounded-lg shadow-lg">
 
-        <a href="#">
-          <img alt="Placeholder" class="block w-full h-auto" src="{{ featured_image }}">
+        <a href="{{ url }}">
+          <img alt="Placeholder" class="h-auto w-50 h-block" src="{{ featured_image }}">
         </a>
 
         <header class="flex items-center justify-between p-2 leading-tight md:p-4">
           <h1 class="text-lg">
-            <a class="text-black no-underline hover:underline" href="#">
+            <a class="text-black no-underline hover:underline" href="{{ url }}">
               {{ title }}
             </a>
           </h1>
@@ -29,7 +29,7 @@
 
         <footer class="flex items-center justify-between p-2 leading-none md:p-4">
           <a class="flex items-center text-black no-underline hover:underline" href="#">
-            <img alt="Placeholder" class="block rounded-full" src="{{ featured_image }}">
+            <img alt="Placeholder" class="block rounded-full" src="{{ author:avatar }}">
             <p class="ml-2 text-sm">
               {{ author:name }}
             </p>
